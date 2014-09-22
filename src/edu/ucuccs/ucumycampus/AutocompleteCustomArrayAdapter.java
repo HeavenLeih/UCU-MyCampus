@@ -45,7 +45,11 @@ public class AutocompleteCustomArrayAdapter extends ArrayAdapter<MyObject> {
 				LayoutInflater inflater = ((Classroom) mContext)
 						.getLayoutInflater();
 				convertView = inflater.inflate(layoutResourceId, parent, false);
+				
 			}
+			
+			
+
 
 			// object item based on the position
 			MyObject objectItem = data[position];
@@ -55,9 +59,16 @@ public class AutocompleteCustomArrayAdapter extends ArrayAdapter<MyObject> {
 			TextView textViewItem = (TextView) convertView
 					.findViewById(R.id.textViewItem);
 			textViewItem.setText(objectItem.objectName);
+			
+			TextView textViewItem1 = (TextView) convertView
+					.findViewById(R.id.textViewItem1);
+			textViewItem1.setText(objectItem.objectName);
 
+		
+			
+			
 			// in case you want to add some style, you can do something like:
-			textViewItem.setBackgroundColor(Color.CYAN);
+			textViewItem.setBackgroundColor(Color.WHITE);
 
 		} catch (NullPointerException e) {
 			e.printStackTrace();

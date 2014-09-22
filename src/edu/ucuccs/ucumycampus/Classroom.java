@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Classroom extends Activity {
 
@@ -54,16 +55,33 @@ public class Classroom extends Activity {
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
 
-					if ((myAutoComplete.getText().equals("17A") && (myAutoloc
-							.getText().equals("18A")))
-							|| (myAutoloc.getText().equals("17A") && (myAutoComplete
-									.getText().equals("18A")))) {
-						Intent classroomGo = new Intent(Classroom.this,
-								Classroom17A.class);
-						startActivity(classroomGo);
-					}
-					
+					if ((myAutoComplete.getText().toString().equals("17A"))
+							&& ((myAutoloc.getText().toString().equals("18A")))) {
 
+						Toast.makeText(
+								getApplicationContext(),
+								"HONNASAN HALL BUILDING/18A IS RIGHT SIDE OF 17A",
+								Toast.LENGTH_LONG).show();
+
+					} else if ((myAutoComplete.getText().toString()
+							.equals("17A"))
+							&& ((myAutoloc.getText().toString()
+									.equals("Room 21")))) {
+
+						Intent classroomGo1 = new Intent(Classroom.this,
+								Classroom17A.class);
+						startActivity(classroomGo1);
+
+					} else if ((myAutoComplete.getText().toString()
+							.equals("17A"))
+							&& ((myAutoloc.getText().toString()
+									.equals("Room 22")))) {
+
+						Intent classroomGo1 = new Intent(Classroom.this,
+								Classroom17A.class);
+						startActivity(classroomGo1);
+
+					}
 
 				}
 			});

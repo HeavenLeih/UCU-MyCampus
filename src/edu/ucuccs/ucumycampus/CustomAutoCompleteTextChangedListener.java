@@ -50,6 +50,7 @@ public class CustomAutoCompleteTextChangedListener implements TextWatcher {
 					classroom, R.layout.list_view_row, myObjs);
 
 			classroom.myAutoComplete.setAdapter(classroom.myAdapter);
+			classroom.myAutoloc.setAdapter(classroom.myAdapter);
 
 		} catch (NullPointerException e) {
 			e.printStackTrace();

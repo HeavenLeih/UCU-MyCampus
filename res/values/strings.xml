@@ -7,5 +7,7 @@
     <string name="title_activity_building">Building</string>
     <string name="title_activity_classroom">Classroom</string>
     <string name="title_activity_classroom17">Classroom17A</string>
+    <string name="title_activity_classroom_cbc">ClassroomCBC</string>
+    <string name="title_activity_building_to_classroom">BuildingToClassroom</string>
 
 </resources>

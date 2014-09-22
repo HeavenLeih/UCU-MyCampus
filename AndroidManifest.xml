@@ -61,6 +61,14 @@
             android:name=".Classroom17A"
             android:label="@string/title_activity_classroom17" >
         </activity>
+        <activity
+            android:name=".ClassroomCBC"
+            android:label="@string/title_activity_classroom_cbc" >
+        </activity>
+        <activity
+            android:name=".BuildingToClassroom"
+            android:label="@string/title_activity_building_to_classroom" >
+        </activity>
     </application>
 
 </manifest>

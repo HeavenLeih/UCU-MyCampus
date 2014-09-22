@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -18,7 +18,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class MainActivity extends Activity {
 	GoogleMap map;
-	ImageButton imBuild, imRoom;
+	ImageView imBuild, imRoom;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +47,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void addImageButtonListener() {
-		imBuild = (ImageButton) findViewById(R.id.imBuild);
-		imRoom = (ImageButton) findViewById(R.id.imRoom);
+		imBuild = (ImageView) findViewById(R.id.imBuild);
+		imRoom = (ImageView) findViewById(R.id.imRoom);
 
 		imBuild.setOnClickListener(new OnClickListener() {
 
@@ -66,8 +66,10 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				
+				
 				Intent classroomGo = new Intent(MainActivity.this,
-						Classroom.class);
+						ClassroomCBC.class);
 				startActivity(classroomGo);
 			}
 		});
